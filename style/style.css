@@ -1,0 +1,72 @@
+html {
+  /* colors */
+  --grey-200: #f1f9f7;
+  --grey-300: #969ca0;
+  --darkgrey-600: #9ba4b5;
+
+  /* fonts */
+  --font-Nunito: "Nunito", "sans-serif";
+  --font-Open-Sans: "Open Sans", "sans-serif";
+  --font-Roboto: "Roboto", "sans-serif";
+}
+body {
+  background-color: var(--grey-200);
+  font-family: var(--font-Nunito);
+  font-size: 1.25rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+h2 {
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+main {
+  width: 70rem;
+  background-color: var(--darkgrey-600);
+  margin: 0px auto;
+}
+
+ul {
+  list-style: none;
+}
+
+#mid-section {
+  background-color: var(--grey-300);
+}
+
+#mid-section ul {
+  list-style: decimal;
+}
+
+.tests {
+  width: auto;
+  display: flex;
+  justify-content: left;
+  margin-left: 2rem;
+}
+
+.tests input {
+  width: auto;
+  margin-right: 0.7rem;
+  margin-bottom: 1.02rem;
+}
+
+.tests p {
+  margin: 0px;
+  padding-left: 1.5rem;
+}
+
+.title {
+  font-family: var(--font-Roboto);
+  box-shadow: 1px 1px 1px white;
+  color: white;
+}
+
+p strong {
+    color: rgb(233, 230, 230);
+}
