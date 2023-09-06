@@ -1,7 +1,10 @@
 html {
   /* colors */
-  --grey-200: #f1f9f7;
+  --white-100: #FFFFFF;
+  --grey-200: #D8D9DA;
   --grey-300: #969ca0;
+  --charcoal-400: #272829;
+  --charcoal-500: #171718;
   --darkgrey-600: #9ba4b5;
 
   /* fonts */
@@ -10,7 +13,7 @@ html {
   --font-Roboto: "Roboto", "sans-serif";
 }
 body {
-  background-color: var(--grey-200);
+  background-color: var(--white-100);
   font-family: var(--font-Nunito);
   font-size: 1.25rem;
 }
@@ -27,12 +30,17 @@ h2 {
 
 main {
   width: 70rem;
-  background-color: var(--darkgrey-600);
+  background-color: var(--grey-200);
   margin: 0px auto;
 }
 
 ul {
   list-style: none;
+}
+
+label {
+  color: var(--charcoal-500);
+  font-weight: 600;
 }
 
 #mid-section {
@@ -41,6 +49,10 @@ ul {
 
 #mid-section ul {
   list-style: decimal;
+}
+.bold {
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .tests {
@@ -68,5 +80,67 @@ ul {
 }
 
 p strong {
-    color: rgb(233, 230, 230);
+    color: var(--charcoal-400);
+}
+
+/* @media only screen and (max-width: 421px) {
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  main {
+    width: 40rem;
+  }
+  
+  .title {
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  
+  ol {
+    width: 25rem;
+  }
+  .tests {
+    padding: 1rem;
+  }
+  
+} */
+
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  #intro {
+    font-size: 1rem;
+  } 
+  main {
+    width: 20rem;
+  }
+  
+  .title {
+    text-align: center;
+    padding-top: 1.1rem;
+  }
+
+  ul li {
+    width: 85%;
+  }
+  
+  ol {
+    width: 15rem;
+    font-size: 1.1rem;
+  }
+
+  .tests {
+    padding: 0.5rem;
+    margin: 0;
+  }
 }
