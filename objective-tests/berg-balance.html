@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script text="text/javascript" src="app.js" defer></script>
   </head>
   <body>
     <header>
@@ -22,11 +23,36 @@
         <article id="intro">
           <h2>About</h2>
           <ul>
-            <li>Clinical test assessing balance and fall risk with 14 tasks</li>
+            <li>
+              The Berg Balance Score is a numerical assessment used by
+              healthcare professionals to measure a person's balance abilities.
+              It assigns a score between 0 and 56 based on their performance in
+              various balance-related tasks. A higher score indicates better
+              balance control, while a lower score suggests potential balance
+              issues and an increased risk of falling. This score helps
+              healthcare providers evaluate an individual's balance, track
+              progress, and determine appropriate interventions to enhance their
+              stability and prevent falls.
+            </li>
           </ul>
           <h2>Scoring</h2>
           <ul>
-            <li>5-point scale ranging from 0 - 4</li>
+            <li>
+              To score the Berg Balance Test, assess an individual's performance
+              on 14 tasks, assigning a score of 0, 1, 2, or 4 points for each. A
+              score of 0 indicates they were unable to perform the task without
+              assistance or experienced severe loss of balance, 1 represents
+              partial ability with difficulty or assistance, 2 signifies minimal
+              difficulty or slight balance loss, and 4 indicates they completed
+              the task with no difficulty or balance loss. The tasks include
+              sitting to standing, sitting unsupported, standing to sitting,
+              transferring from sitting to standing, standing unsupported,
+              reaching forward while standing, retrieving an object from the
+              floor while standing, and turning 360 degrees in both directions.
+              Sum the scores for all tasks to get the individual's total Berg
+              Balance Test score, which ranges from 0 to 56, with higher scores
+              reflecting better balance control and lower fall risk.
+            </li>
           </ul>
           <h2>Results</h2>
           <ul class="bold">
@@ -865,8 +891,12 @@
               </div>
             </ol>
           </form>
+          <button type="button" onclick="summary()">Calculate</button>
         </article>
+        <!-- section to add the results from JS page -->
+        <div id="result"></div>
       </section>
     </main>
+    <footer>add footer label here</footer>
   </body>
 </html>
