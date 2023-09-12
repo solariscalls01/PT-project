@@ -23,19 +23,15 @@ function summary() {
   const getDiv = document.getElementById("result");
   scoreResult = getTotal(); //get the int value and provide appropriate summary based on score
   if (scoreResult >= 41) {
-    getDiv.innerHTML =
-      "<h2>Results:</h2>" +
-      scoreResult +
-      "<p>A person with a score in this range is considered independent and should be able to move around safely without assistance.</p>";
+    getDiv.innerHTML =`
+      <h2>Results: ${scoreResult}</h2>
+      <p>A person with a score indicates a <strong>lower risk of falling.</strong> Individuals demonstrate better balance control and are less likely to experience falls during daily activities.</p>`
   } else if (scoreResult >= 21 || scoreResult <= 40) {
     getDiv.innerHTML =
-      "<h2>Results:</h2>" +
-      scoreResult +
-      "<p>A person with a score in this range will need some type of walking assistance, such as a cane or a walker.</p>";
-  } else {
+      `<h2>Results: ${scoreResult}</h2>"
+      <p>A person with a score indicates a <strong>moderate risk</strong> of falling. They exhibit some balance difficulties and may need interventions or exercises to improve their balance and reduce the risk of falls.</p>`
     getDiv.innerHTML =
-      "<h2>Results:</h2>" +
-      scoreResult +
-      "<p>A person with a score in this range will likely need the assistance of a wheelchair to move around safely.</p>";
+      `<h2>Results: ${scoreResult}</h2>
+      <p>A person with a score indicates <strong>high risk of falling</strong>. Individuals scoring in this range may have significant balance impairments and are more likely to experience falls during daily activities.</p>`
   }
 }
