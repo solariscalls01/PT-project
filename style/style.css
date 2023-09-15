@@ -29,11 +29,11 @@ html {
   text-decoration: none;
 }
 
-.nav-bar-links {
+.menu {
   display: flex;
 }
 
-.nav-bar-links li {
+.menu li {
   padding-right: 3.2rem;
 }
 
@@ -46,6 +46,39 @@ header {
   margin: 0px auto;
   border-radius: 1rem;
 }
+
+/* Creating the hamburger icon */
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+}
+
+/* hamburger section for the header  */
+/* fixed position in order to get the element "behind" the viewport so to speak. Allows to take the entire page   */
+#side-drawer {
+  background-color: rgb(29, 26, 24);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0px;
+  left: 0%;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+
 body {
   margin-top: 1.5rem;
   background-color: var(--white-100);
@@ -59,7 +92,7 @@ a {
   transition: color 0.3s ease;
 }
 
-.nav-bar-links a:hover {
+.menu a:hover {
   font-weight: bold;
   border-bottom: 1px solid #f1f1f1;  
   transform: scale(1.1);
@@ -146,6 +179,44 @@ footer {
   margin: 0px auto;
 }
 
+
+/* creating the hamburger menu */
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background:white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+
+
 @media only screen and (max-width: 600px) {
   h1 {
     text-align: center;
@@ -169,6 +240,10 @@ footer {
     text-align: center;
     padding-top: 1.1rem;
   }
+  /* hides the links for the header and creates the hamburger  */
+  .menu {
+    display: none;
+  }
 
   ul li {
     width: 85%;
@@ -182,5 +257,12 @@ footer {
   .tests {
     padding: 0.5rem;
     margin: 0;
+  }
+
+}
+
+@media (min-width: 48rem) {
+  .menu-btn {
+    display: none;
   }
 }
