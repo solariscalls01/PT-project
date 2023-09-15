@@ -11,7 +11,32 @@ html {
   --font-Nunito: "Nunito", "sans-serif";
   --font-Open-Sans: "Open Sans", "sans-serif";
   --font-Roboto: "Roboto", "sans-serif";
+  --font-Lato: "Lato", "sans-serif";
+  --font-Georgia: "Noto Sans Georgian", 'sans-serif';
 }
+
+.nav-bar {
+  display: flex;
+  justify-content:space-between;
+  margin: 0px auto;
+  align-items: center;
+}
+
+#logo {
+  margin-left: 2.5rem;
+  font-size: 2rem;
+  font-family: var(--font-Lato);
+  text-decoration: none;
+}
+
+.nav-bar-links {
+  display: flex;
+}
+
+.nav-bar-links li {
+  padding-right: 3.2rem;
+}
+
 header {
   background-color: #0072c6;
   color: #fff;
@@ -19,16 +44,32 @@ header {
   text-align: center;
   width: 70rem;
   margin: 0px auto;
+  border-radius: 1rem;
 }
 body {
+  margin-top: 1.5rem;
   background-color: var(--white-100);
   font-family: var(--font-Nunito);
   font-size: 1.25rem;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-bar-links a:hover {
+  font-weight: bold;
+  border-bottom: 1px solid #f1f1f1;  
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 h1 {
   text-align: center;
   margin: 2rem;
+  padding-top: 2rem;
 }
 
 h2 {
@@ -40,6 +81,7 @@ main {
   width: 70rem;
   background-color: var(--grey-200);
   margin: 0px auto;
+  border-radius: 1.2rem;
 }
 
 ul {
@@ -91,11 +133,17 @@ p strong {
   color: var(--charcoal-400);
 }
 
+#results {
+  padding: 2rem 2rem;
+}
+
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0; 
+  width: 70rem;
+  margin: 0px auto;
 }
 
 @media only screen and (max-width: 600px) {
