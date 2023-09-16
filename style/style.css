@@ -29,8 +29,13 @@ html {
   text-decoration: none;
 }
 
-.menu {
+.menu-links {
   display: flex;
+  justify-content: space-between;
+}
+
+.menu-links a{
+  margin-right: 1.5rem;
 }
 
 .menu li {
@@ -44,40 +49,8 @@ header {
   text-align: center;
   width: 70rem;
   margin: 0px auto;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
 }
-
-/* Creating the hamburger icon */
-.menu-btn {
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.menu-btn span {
-  width: 100%;
-  height: 4px;
-  background-color: white;
-}
-
-/* hamburger section for the header  */
-/* fixed position in order to get the element "behind" the viewport so to speak. Allows to take the entire page   */
-#side-drawer {
-  background-color: rgb(29, 26, 24);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top:0px;
-  left: 0%;
-  display: none;
-}
-
-#side-drawer:target {
-  display: block;
-}
-
 
 body {
   margin-top: 1.5rem;
@@ -92,7 +65,7 @@ a {
   transition: color 0.3s ease;
 }
 
-.menu a:hover {
+.menu-links a:hover {
   font-weight: bold;
   border-bottom: 1px solid #f1f1f1;  
   transform: scale(1.1);
@@ -114,7 +87,7 @@ main {
   width: 70rem;
   background-color: var(--grey-200);
   margin: 0px auto;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
 }
 
 ul {
@@ -179,10 +152,23 @@ footer {
   margin: 0px auto;
 }
 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
 
 /* creating the hamburger menu */
 .hamburger {
-  position: fixed;
+  display: none;
   z-index: 100;
   top: 1rem;
   right: 1rem;
@@ -198,23 +184,37 @@ footer {
 
 .menu {
   position: fixed;
-  transform: translateY(-100%);
+  width: 80%;
+  height: 15rem;
+  border-radius: 11px;
+  margin: 0px auto;
+  transform: translateY(-200%);
   transition: transform 0.2s;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 99;
-  background-color: black;
+  background-color: #218dda;
   color: white;
   list-style: none;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
 }
 
 .showMenu {
   transform: translateY(0);
+  margin-top: 8.9rem;
+  padding-top: 1rem;
 }
 
+ul.menu.showMenu {
+  padding: 10;
+}
+
+.showMenu li{
+  padding-top: 1.2rem;
+  text-align: center;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -225,15 +225,25 @@ footer {
   h2 {
     text-align: center;
   }
+
+  #logo {
+    font-size: 1.2rem;
+    display: inline;
+    text-wrap:nowrap;
+  }
+
+  a#logo {
+    margin-left: 1rem;
+  }
   #intro {
     font-size: 1rem;
   }
   main {
-    width: 20rem;
+    width: 100%;
   }
 
   header {
-    width: 20rem;
+    width: 100%;
   }
 
   .title {
@@ -241,8 +251,17 @@ footer {
     padding-top: 1.1rem;
   }
   /* hides the links for the header and creates the hamburger  */
-  .menu {
+  .menu-links a {
     display: none;
+    width: 50%;
+  }
+
+  .menu-links a {
+    font-size: 1.2rem;
+  }
+
+  .menu-links {
+    padding-left: 100px;
   }
 
   ul li {
@@ -259,10 +278,15 @@ footer {
     margin: 0;
   }
 
-}
+  
 
-@media (min-width: 48rem) {
-  .menu-btn {
-    display: none;
+}
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    display: flex;
+    margin-right: 2.5rem;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 100;
   }
 }
