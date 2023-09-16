@@ -50,6 +50,7 @@ header {
   width: 70rem;
   margin: 0px auto;
   border-radius: 0.8rem;
+  min-width: 21rem;
 }
 
 body {
@@ -180,7 +181,7 @@ footer {
   cursor: pointer;
 }
 
-.closeIcon {
+li .closeIcon {
   display: none;
 }
 
@@ -294,4 +295,135 @@ ul.menu.showMenu {
     justify-content: left;
     z-index: 100;
   }
+  a.menuItem{
+    font-size: 1.5rem;
+  }
+  .showMenu {
+    transform: translateY(0);
+    margin-top: 9.5rem;
+    padding-top: 3rem;
+  }
+  
+  ul.menu.showMenu {
+    padding: 1rem;
+    width: 20rem;
+  }
+  
+  .showMenu li{
+    padding-top: 2.2rem;
+    text-align: center;
+  }
+  #logo {
+    font-size: 2.1rem;
+    display: inline;
+    text-wrap:nowrap;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .hamburger {
+    display: flex;
+    margin-right: 2.5rem;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 100;
+  }
+  .showMenu {
+    transform: translateY(0);
+    margin-top: 9.5rem;
+    padding-top: 3rem;
+  }
+  
+  ul.menu.showMenu {
+    padding: 10;
+  }
+  
+  .showMenu li{
+    padding-top: 2.2rem;
+    text-align: center;
+  }
+
+}
+@media only screen and (max-width: 440px) {
+  .hamburger {
+    display: flex;
+    margin-right: 1rem;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 100;
+  }
+  a.menuItem{
+    font-size: 1.4rem;
+  }
+  .showMenu {
+    transform: translateY(0);
+    margin-top: 9.5rem;
+    padding-top: 1.2rem;
+  }
+  
+  ul.menu.showMenu {
+    /* padding: 10px; */
+    width: 17rem;
+  }
+  
+  .showMenu li{
+    padding-top: 2.2rem;
+    text-align: center;
+  }
+  #logo {
+    font-size: 1.7rem;
+    display: inline;
+    text-wrap:nowrap;
+  }
+
+}
+@media only screen and (max-width: 360px) {
+  .hamburger {
+    display: flex;
+    margin-right: 1rem;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    flex-direction: row;
+    justify-content: left;
+    z-index: 100;
+  }
+  a.menuItem{
+    font-size: 1.1rem;
+    text-wrap: wrap;
+  }
+  a.menuItem::after {
+    font-weight: bold;
+  border-bottom: 1px solid #f1f1f1;  
+  transform: scale(1.1);
+  cursor: pointer;
+
+  }
+  .showMenu {
+    transform: translateY(0);
+    margin-top: 9.5rem;
+    padding-top: 1.2rem;
+  }
+  
+  ul.menu.showMenu {
+    /* padding: 10px; */
+    width: 17rem;
+  }
+  
+  .showMenu li{
+    padding-top: 2.2rem;
+    text-align: center;
+  }
+  #logo {
+    font-size: 1.2rem;
+    display: inline;
+    text-wrap:nowrap;
+  }
+
 }
