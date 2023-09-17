@@ -25,13 +25,14 @@ function summary() {
   if (scoreResult >= 41) {
     getDiv.innerHTML =`
       <h2>Results: ${scoreResult}</h2>
-      <p>A person with a score indicates a <strong>lower risk of falling.</strong> Individuals demonstrate better balance control and are less likely to experience falls during daily activities.</p>`
-  } else if (scoreResult >= 21 || scoreResult <= 40) {
-    getDiv.innerHTML =
-      `<h2>Results: ${scoreResult}</h2>"
-      <p>A person with a score indicates a <strong>moderate risk</strong> of falling. They exhibit some balance difficulties and may need interventions or exercises to improve their balance and reduce the risk of falls.</p>`
+      <p>A person with a score indicates a <strong class="result-statement">lower risk of falling.</strong> Individuals demonstrate better balance control and are less likely to experience falls during daily activities.</p>`
+  } else if (scoreResult <= 40 && scoreResult >=21) {
     getDiv.innerHTML =
       `<h2>Results: ${scoreResult}</h2>
-      <p id="results">A person with a score indicates <strong>high risk of falling</strong>. Individuals scoring in this range may have significant balance impairments and are more likely to experience falls during daily activities.</p>`
-  }
+      <p>A person with a score indicates a <strong class="result-statement">moderate risk</strong> of falling. They exhibit some balance difficulties and may need interventions or exercises to improve their balance and reduce the risk of falls.</p>`
+  } else {
+      getDiv.innerHTML =
+      `<h2>Results: ${scoreResult}</h2>
+      <p id="results">A person with a score indicates <strong class="result-statement">high risk of falling</strong>. Individuals scoring in this range may have significant balance impairments and are more likely to experience falls during daily activities.</p>`
+    }
 }

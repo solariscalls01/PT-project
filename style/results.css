@@ -1,0 +1,10 @@
+#result {
+    background-color: #0072c6;
+  color: #fff;
+  border-radius: 0.8rem;
+  overflow: auto;
+}
+
+.result-statement {
+    color:rgb(17, 233, 89)
+}

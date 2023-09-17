@@ -3,27 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Berg Balance Test</title>
+    <title>PT Objectives</title>
     <link rel="stylesheet" href="/style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito&family=Open+Sans&family=Roboto:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Noto+Sans+Georgian:wght@500&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <script text="text/javascript" src="app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/results.css">
+    <script src="/style/menu.js" defer></script>
+    <script src="/objective-tests/app.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="nav-bar">
         <a href="/" id="logo">Therapy Toolkit</a>
-        <ul class="nav-bar-links">
+        <ul class="menu-links">
           <li><a href="/Functional Endurance">Functional Endurance</a></li>
           <li><a href="/objective-tests/berg-balance.html">Balance</a></li>
           <li><a href="/Strength">Strength</a></li>
+          <li>
+            <button class="hamburger">
+              <span class="menuIcon material-icons md-30"> menu </span>
+              <span class="closeIcon material-icons md-30"> close </span>
+              <!-- <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i> -->
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
+    <ul class="menu">
+      <li><a href="#" class="menuItem">Functional Endurance</a></li>
+      <li>
+        <a href="/objective-tests/berg-balance.html" class="menuItem"
+          >Balance</a
+        >
+      </li>
+      <li><a href="#" class="menuItem">Strength</a></li>
+    </ul>
     <main>
       <h1>Berg Balance Test</h1>
       <section class="border">
@@ -890,12 +913,15 @@
               </div>
             </ol>
           </form>
-          <button type="button" onclick="summary()">Calculate</button>
+          <button type="button" onclick="summary()" id="calculate">Calculate</button>
         </article>
         <!-- section to add the results from JS page -->
         <div id="result"></div>
       </section>
     </main>
-    <footer>add footer label here</footer>
   </body>
+  <footer id="footer">
+    <p>Therapy Toolkit</p>
+    <p>Copyright © 2023. All rights reserved.</p>
+  </footer>
 </html>
