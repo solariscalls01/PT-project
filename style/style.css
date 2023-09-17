@@ -255,6 +255,10 @@ ul.menu.showMenu {
   padding: 10;
 }
 
+ul li a:hover {
+  color: #FF5733;
+}
+
 .showMenu li {
   padding-top: 1.2rem;
   text-align: center;
@@ -376,7 +380,7 @@ ul.menu.showMenu {
 
   /* horizontal rule divider in dropdown menu */
   .menu hr {
-    width: 50%;
+    width: 45%;
     margin-right: 5rem;
   }
 
