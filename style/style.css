@@ -362,8 +362,11 @@ ul.menu.showMenu {
     justify-content: left;
     z-index: 100;
   }
+
+  /* section for the link items in the dropdown menu */
   a.menuItem {
     font-size: 1.5rem;
+    color: white;
   }
   .showMenu {
     transform: translateY(0);
@@ -371,14 +374,23 @@ ul.menu.showMenu {
     padding-top: 3rem;
   }
 
+  /* horizontal rule divider in dropdown menu */
+  .menu hr {
+    width: 50%;
+    margin-right: 5rem;
+  }
+
   ul.menu.showMenu {
     padding: 1rem;
-    width: 20rem;
+    width: 34rem;
+    height: 25rem;
   }
 
   .showMenu li {
     padding-top: 2.2rem;
     text-align: center;
+    display: flex;
+    justify-content: right;
   }
   #logo {
     font-size: 2.1rem;

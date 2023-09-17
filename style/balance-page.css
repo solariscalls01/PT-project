@@ -1,0 +1,34 @@
+/* Anchor links */
+ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #0074d9 ; /* Default link color */
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #FF5733;
+}
+
+.menu-links a{
+    color: white;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #list-test ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin: 0rem auto; */
+    }
+
+    /* align items to center with responsive design */
+    #list-test ul{
+        padding: 0;
+        text-align: center;
+    }
+}
