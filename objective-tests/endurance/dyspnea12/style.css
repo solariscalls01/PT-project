@@ -1,0 +1,61 @@
+/* styling for the rows */
+tr th {
+    padding: 0 4rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+td {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* change the size of the radio button */
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #0072c6;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    tr th {
+        padding: 0.2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    td {
+        padding: 0;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    ol {
+        padding: 0;
+    }
+
+}

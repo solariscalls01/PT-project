@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Objectives</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+Georgian:wght@500&family=Open+Sans&family=Poppins:wght@300&display=swap"
+    rel="stylesheet"
+  />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/results.css">
+    <link rel="stylesheet" href="/objective-tests/endurance/dyspnea12/style.css">
+    <script src="/style/menu.js" defer></script>
+    <script src="/objective-tests/endurance/dyspnea12/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <a href="/" id="logo">Therapy Toolkit</a>
+        <ul class="menu-links">
+          <li><a href="/objective-tests/endurance/endurance-home.html">Functional Endurance</a></li>
+          <li><a href="/objective-tests/balance-home.html">Balance</a></li>
+          <li><a href="/Orthopedic">Orthopedic</a></li>
+          <li>
+            <button class="hamburger">
+              <span class="menuIcon material-icons md-30"> menu </span>
+              <span class="closeIcon material-icons md-30"> close </span>
+              <!-- <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i> -->
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <ul class="menu">
+      <li><a href="/objective-tests/endurance/endurance-home.html" class="menuItem">Functional Endurance</a></li>
+      <hr>
+      <li>
+        <a href="/objective-tests/balance-home.html" class="menuItem"
+          >Balance</a
+        >
+      </li>
+      <hr>
+      <li><a href="#" class="menuItem">Orthopedic</a></li>
+      <hr>
+    </ul>
+    <main>
+      <h1>Dyspnea-12 Questionnaire</h1>
+      <section class="border">
+        <article id="intro">
+          <h2>About</h2>
+          <ul>
+            <li>
+              <p>
+                The Dyspnea-12 questionnaire is a valuable tool for healthcare providers, as it helps them better understand a patient's experience with dyspnea, 
+                monitor changes in symptoms over time, and tailor treatment plans accordingly. </p>
+                <p>
+
+                  It can be particularly useful in the diagnosis and management of 
+                  conditions such as chronic obstructive pulmonary disease (COPD), asthma, heart failure, and other respiratory and cardiovascular disorders where 
+                  dyspnea is a significant symptom.
+                </p>
+              </p>
+            </li>
+          </ul>
+          <h2>Scoring</h2>
+          <ul>
+            <li>
+              <p>
+                The Dyspnea-12 questionnaire typically uses a scoring range. The exact scoring system can vary, but it usually involves 
+                assigning points to each response <em>(None = 0, Mild = 1, Moderate = 2, Severe = 3)</em>, with higher scores indicating more severe dyspnea.
+              </p>
+            </li>
+          </ul>
+          <h2>Results</h2>
+          <ul class="bold">
+            <li>&nbsp 0 - 10 = Mild dyspnea</li>
+            <li>&nbsp11- 20 = Moderate Dyspnea</li>
+            <li>&nbsp >= 21  = Severe Dyspnea</li>
+          </ul>
+        </article>
+        <article id="mid-section">
+          <form action="" method="POST">
+            <ol>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Items</th>
+                        <th>None</th>
+                        <th>Mild</th>
+                        <th>Moderate</th>
+                        <th>Severe</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>My breath does not go in all the way</td>
+                        <td><input  type="radio" name="breathing-quality" id="breathing-quality0" value="0"></td>
+                        <td><input  type="radio" name="breathing-quality" id="breathing-quality1" value="1"></td>
+                        <td><input  type="radio" name="breathing-quality" id="breathing-quality2" value="2"></td>
+                        <td><input  type="radio" name="breathing-quality" id="breathing-quality3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>My breathing requires more work</td>
+                        <td><input  type="radio" name="breathing-work" id="breathing-work0" value="0"></td>
+                        <td><input  type="radio" name="breathing-work" id="breathing-work1" value="1"></td>
+                        <td><input  type="radio" name="breathing-work" id="breathing-work2" value="2"></td>
+                        <td><input  type="radio" name="breathing-work" id="breathing-work3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>I feel short of breath</td>
+                        <td><input  type="radio" name="breathing-SOB" id="breathing-SOB0" value="0"></td>
+                        <td><input  type="radio" name="breathing-SOB" id="breathing-SOB1" value="1"></td>
+                        <td><input  type="radio" name="breathing-SOB" id="breathing-SOB2" value="2"></td>
+                        <td><input  type="radio" name="breathing-SOB" id="breathing-SOB3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>I have difficulty catching my breath</td>
+                        <td><input  type="radio" name="breathing-catch-breath" id="breathing-catch-breath0" value="0"></td>
+                        <td><input  type="radio" name="breathing-catch-breath" id="breathing-catch-breath1" value="1"></td>
+                        <td><input  type="radio" name="breathing-catch-breath" id="breathing-catch-breath2" value="2"></td>
+                        <td><input  type="radio" name="breathing-catch-breath" id="breathing-catch-breath3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>I cannot get enough air</td>
+                        <td><input  type="radio" name="breathing-air" id="breathing-air0" value="0"></td>
+                        <td><input  type="radio" name="breathing-air" id="breathing-air1" value="1"></td>
+                        <td><input  type="radio" name="breathing-air" id="breathing-air2" value="2"></td>
+                        <td><input  type="radio" name="breathing-air" id="breathing-air3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>My breathing is uncomfortable</td>
+                        <td><input  type="radio" name="breathing-uncomfortable" id="breathing-uncomfortable0" value="0"></td>
+                        <td><input  type="radio" name="breathing-uncomfortable" id="breathing-uncomfortable1" value="1"></td>
+                        <td><input  type="radio" name="breathing-uncomfortable" id="breathing-uncomfortable2" value="2"></td>
+                        <td><input  type="radio" name="breathing-uncomfortable" id="breathing-uncomfortable3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>My breathing is exhausting</td>
+                        <td><input  type="radio" name="breathing-exhausting" id="breathing-exhausting0" value="0"></td>
+                        <td><input  type="radio" name="breathing-exhausting" id="breathing-exhausting1" value="1"></td>
+                        <td><input  type="radio" name="breathing-exhausting" id="breathing-exhausting2" value="2"></td>
+                        <td><input  type="radio" name="breathing-exhausting" id="breathing-exhausting3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>My breathing makes me feel depressed</td>
+                        <td><input  type="radio" name="breathing-depressed" id="breathing-depressed0" value="0"></td>
+                        <td><input  type="radio" name="breathing-depressed" id="breathing-depressed1" value="1"></td>
+                        <td><input  type="radio" name="breathing-depressed" id="breathing-depressed2" value="2"></td>
+                        <td><input  type="radio" name="breathing-depressed" id="breathing-depressed3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>My breathing makes me feel miserable</td>
+                        <td><input  type="radio" name="breathing-miserable" id="breathing-miserable0" value="0"></td>
+                        <td><input  type="radio" name="breathing-miserable" id="breathing-miserable1" value="1"></td>
+                        <td><input  type="radio" name="breathing-miserable" id="breathing-miserable2" value="2"></td>
+                        <td><input  type="radio" name="breathing-miserable" id="breathing-miserable3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>My breathing is distressing</td>
+                        <td><input  type="radio" name="breathing-distressing" id="breathing-distressing0" value="0"></td>
+                        <td><input  type="radio" name="breathing-distressing" id="breathing-distressing1" value="1"></td>
+                        <td><input  type="radio" name="breathing-distressing" id="breathing-distressing2" value="2"></td>
+                        <td><input  type="radio" name="breathing-distressing" id="breathing-distressing3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>My breathing makes agitated</td>
+                        <td><input  type="radio" name="breathing-agitated" id="breathing-agitated0" value="0"></td>
+                        <td><input  type="radio" name="breathing-agitated" id="breathing-agitated1" value="1"></td>
+                        <td><input  type="radio" name="breathing-agitated" id="breathing-agitated2" value="2"></td>
+                        <td><input  type="radio" name="breathing-agitated" id="breathing-agitated3" value="3"></td>
+                      </tr>
+                      <tr>
+                        <td>My breathing is irritating</td>
+                        <td><input  type="radio" name="breathing-irritating" id="breathing-irritating0" value="0"></td>
+                        <td><input  type="radio" name="breathing-irritating" id="breathing-irritating1" value="1"></td>
+                        <td><input  type="radio" name="breathing-irritating" id="breathing-irritating2" value="2"></td>
+                        <td><input  type="radio" name="breathing-irritating" id="breathing-irritating3" value="3"></td>
+                      </tr>
+                    </tbody>
+                    </table>
+            </ol>
+          </form>
+          <button type="button" onclick="getSummary()" id="calculate">Calculate</button>
+        </article>
+        <!-- section to add the results from JS page -->
+        <div id="result"></div>
+      </section>
+    </main>
+  </body>
+  <footer id="footer">
+    <p>Therapy Toolkit</p>
+    <p>Copyright © 2023. All rights reserved.</p>
+  </footer>
+</html>

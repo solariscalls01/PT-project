@@ -6,13 +6,18 @@ html {
   --charcoal-400: #272829;
   --charcoal-500: #171718;
   --darkgrey-600: #9ba4b5;
+  --light-turquoise: #C4DFDF;
+  --soft-aqua: #D2E9E9;
+  --royal-blue: #0072c6;
+  --soft-azure: #AFD3E2;
 
   /* fonts */
   --font-Nunito: "Nunito", "sans-serif";
   --font-Open-Sans: "Open Sans", "sans-serif";
   --font-Roboto: "Roboto", "sans-serif";
-  --font-Lato: "Lato", "sans-serif";
+  --font-Lato: "Lato-900", "sans-serif";
   --font-Georgia: "Noto Sans Georgian", "sans-serif";
+  --font-Poppins: 'Poppins', 'sans-serif';
 }
 
 .nav-bar {
@@ -42,8 +47,9 @@ html {
   padding-right: 3.2rem;
 }
 
+
 header {
-  background-color: #0072c6;
+  background-color: var(--royal-blue);
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -56,7 +62,8 @@ header {
 body {
   margin-top: 1.5rem;
   background-color: var(--white-100);
-  font-family: var(--font-Nunito);
+  font-family: var(--font-Poppins);
+  text-shadow: none;
   font-size: 1.25rem;
   border-radius: 0.8rem;
 }
@@ -109,7 +116,7 @@ h3 {
 
 main {
   width: 70rem;
-  background-color: var(--grey-200);
+  background-color: var(--soft-azure);
   margin: 0px auto;
   border-radius: 1rem;
 }
@@ -124,7 +131,7 @@ label {
 }
 
 #mid-section {
-  background-color: var(--grey-300);
+  background-color: var(--soft-aqua);
   border-radius: 0.8rem;
 }
 
@@ -157,7 +164,7 @@ label {
 .title {
   font-family: var(--font-Roboto);
   box-shadow: 1px 1px 1px white;
-  color: white;
+  color: var(--charcoal-500);
 }
 
 p strong {

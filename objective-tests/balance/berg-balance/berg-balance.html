@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PT Objectives</title>
     <link rel="stylesheet" href="/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="/objective-tests/balance/berg-balance/style.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Noto+Sans+Georgian:wght@500&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+Georgian:wght@500&family=Open+Sans&family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style/results.css">
+    <link rel="stylesheet" href="/style/results.css" />
     <script src="/style/menu.js" defer></script>
     <script src="/objective-tests/app.js" defer></script>
   </head>
@@ -24,7 +28,11 @@
       <nav class="nav-bar">
         <a href="/" id="logo">Therapy Toolkit</a>
         <ul class="menu-links">
-          <li><a href="/Functional Endurance">Functional Endurance</a></li>
+          <li>
+            <a href="/objective-tests/endurance/endurance-home.html"
+              >Functional Endurance</a
+            >
+          </li>
           <li><a href="/objective-tests/balance-home.html">Balance</a></li>
           <li><a href="/Orthopedic">Orthopedic</a></li>
           <li>
@@ -39,16 +47,22 @@
       </nav>
     </header>
     <ul class="menu">
-      <li><a href="#" class="menuItem">Functional Endurance</a></li>
-      <hr>
+      <li>
+        <a
+          href="/objective-tests/endurance/endurance-home.html"
+          class="menuItem"
+          >Functional Endurance</a
+        >
+      </li>
+      <hr />
       <li>
         <a href="/objective-tests/balance-home.html" class="menuItem"
           >Balance</a
         >
       </li>
-      <hr>
+      <hr />
       <li><a href="#" class="menuItem">Orthopedic</a></li>
-      <hr>
+      <hr />
     </ul>
     <main>
       <h1>Berg Balance Test</h1>
@@ -58,16 +72,15 @@
           <ul>
             <li>
               <p>
-
                 The Berg Balance Score is a numerical assessment used by
-                healthcare professionals to measure a person's balance abilities.
-                It assigns a score between 0 and 56 based on their performance in
-                various balance-related tasks. A higher score indicates better
-                balance control, while a lower score suggests potential balance
-                issues and an increased risk of falling. This score helps
-                healthcare providers evaluate an individual's balance, track
-                progress, and determine appropriate interventions to enhance their
-                stability and prevent falls.
+                healthcare professionals to measure a person's balance
+                abilities. It assigns a score between 0 and 56 based on their
+                performance in various balance-related tasks. A higher score
+                indicates better balance control, while a lower score suggests
+                potential balance issues and an increased risk of falling. This
+                score helps healthcare providers evaluate an individual's
+                balance, track progress, and determine appropriate interventions
+                to enhance their stability and prevent falls.
               </p>
             </li>
           </ul>
@@ -78,9 +91,10 @@
                 The Berg Balance Test is a valuable tool used to assess an
                 individual's balance and risk of falling. To score the Berg
                 Balance Test, observe and evaluate their performance on 14
-                specific tasks, assigning a numerical score to each task based on
-                predefined criteria. For each task, you will assign a score of 0,
-                1, 2, or 4 points, depending on the individual's performance:
+                specific tasks, assigning a numerical score to each task based
+                on predefined criteria. For each task, you will assign a score
+                of 0, 1, 2, or 4 points, depending on the individual's
+                performance:
               </p>
             </li>
           </ul>
@@ -94,7 +108,6 @@
         <article id="mid-section">
           <form action="" method="POST">
             <ol>
-              <h2>Sitting Balance</h2>
               <!-- sit to stand -->
               <li class="title"><strong>SITTING TO STANDING</strong></li>
               <p>
@@ -232,7 +245,6 @@
                   seconds</label
                 >
               </div>
-              <h2>Standing Balance</h2>
 
               <!-- Standing Unsupported -->
               <li class="title"><strong>STANDING UNSUPPORTED</strong></li>
@@ -557,10 +569,12 @@
                 out your fingers and reach forward as far as you can. (Examiner
                 places a ruler at the end of fingertips when arm is at 90
                 degrees. Fingers should not touch the ruler while reaching
-                forward. The recorded measure is the distance forward that the
-                fingers reach while the subject is in the most forward lean
-                position. When possible, ask subject to use both arms when
-                reaching to avoid rotation of the trunk.)
+                forward.</p> 
+                <p>The recorded measure is the distance forward that the
+                  fingers reach while the subject is in the most forward lean
+                  position. When possible, ask subject to use both arms when
+                  reaching to avoid rotation of the trunk.)
+                </p>
               </p>
               <div class="tests">
                 <input type="radio" value="4" name="reaching" id="reaching4" />
@@ -839,10 +853,11 @@
                 <strong>Instructions: </strong>Place one foot directly in front
                 of the other. If you feel that you cannot place your foot
                 directly in front, try to step far enough ahead that the heel of
-                your forward foot is ahead of the toes of the other foot. (To
-                score 3 points, the length of the step should exceed the length
-                of the other foot and the width of the stance should approximate
-                the subject’s normal stride width.)
+                your forward foot is ahead of the toes of the other foot.</p>
+                <p>(To score 3 points, the length of the step should exceed the length
+                  of the other foot and the width of the stance should approximate
+                  the subject’s normal stride width.)
+                </p>
               </p>
               <div class="tests">
                 <input type="radio" value="4" name="tandem" id="tandem4" />
@@ -921,7 +936,9 @@
               </div>
             </ol>
           </form>
-          <button type="button" onclick="summary()" id="calculate">Calculate</button>
+          <button type="button" onclick="summary()" id="calculate">
+            Calculate
+          </button>
         </article>
         <!-- section to add the results from JS page -->
         <div id="result"></div>
